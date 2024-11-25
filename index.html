@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <style>
+        /* Reset básico */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Estilo de la sección de enlaces */
+        .links-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .links-section a {
+            font-size: 16px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .links-section a:hover {
+            text-decoration: underline;
+        }
+        /* Estilo del pie de página */
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 14px;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        /* Estilo de la caja de sugerencias */
+        .suggestion-box {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        .suggestion-box h2 {
+            font-size: 22px;
+            color: #007BFF;
+            margin-bottom: 15px;
+        }
+
+        .suggestion-box p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .footer p {
+            margin: 5px 0;
+            line-height: 1.5;
+        }
+
+        .footer strong {
+            font-weight: bold;
+        }
+
+        /* Contenedor principal */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* Sección de la imagen */
+        .image-section {
+            position: relative;
+            width: 100%;
+            height: 60vh;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Estilo del título sobre la imagen */
+        .image-title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
+
+        /* Sección de botones */
+        .button-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Estilo de la sección de información */
+        .info-section {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .info-section h2 {
+            color: #007BFF;
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .info-section p {
+            margin: 10px 0;
+        }
+
+        .info-section ul {
+            padding-left: 20px;
+            list-style-type: disc;
+        }
+
+        /* Sección de referencias */
+        .references-section {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+
+        .references-section h2 {
+            color: #007BFF;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .references-section p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <!-- Imagen principal -->
+        <div class="image-section">
+            <img src="imagenprincipal.jpeg" alt="Imagen principal" class="main-image">
+            <div class="image-title">Emergencias Médicas y Primeros Auxilios</div>
+        </div>
+
+        <!-- Botones de navegación -->
+        <div class="button-section">
+            <button onclick="window.location.href='video.html'">ir al video informativo</button>
+            <button onclick="window.location.href='audio.html'">Ir al audio informativo</button>
+        </div>
+        <div class="links-section">
+            <a href="https://www2.cruzroja.es/cursos-primeros-auxilios" target="_blank">Primeros Auxilios</a>
+            <a href="https://www.mayoclinic.org/es/first-aid" target="_blank">Primeros auxilios</a>
+            <a href="https://medlineplus.gov/spanish/ency/esp_presentations/100212_1.htm" target="_blank">Primeros auxilios en caso de convulsiones - Serie—Procedimiento, parte 1</a>
+        </div>
+        <!-- Introducción -->
+        <div class="info-section">
+            <h2>¿Qué es una emergencia médica?</h2>
+            <p>Una emergencia médica es una situación de salud crítica que requiere atención inmediata para evitar consecuencias severas, como lesiones permanentes, incapacidad o la muerte. Este tipo de emergencias puede originarse por accidentes, afecciones repentinas o complicaciones de enfermedades ya existentes.</p>
+            <h3>Características de una emergencia médica:</h3>
+            <ul>
+                <li><strong>Urgencia y gravedad:</strong> Es necesario actuar de forma rápida para estabilizar al paciente y evitar más daños.</li>
+                <li><strong>Riesgo para la vida o la salud:</strong> Si no se atiende a tiempo, puede poner en peligro la vida o el bienestar a largo plazo del paciente.</li>
+                <li><strong>Sorpresiva:</strong> Las emergencias médicas suelen ocurrir de manera inesperada, sin señales previas.</li>
+            </ul>
+        </div>
+
+        <!-- Información detallada -->
+        <div class="info-section">
+            <h2>1. ¿Cómo actuar en una emergencia médica?</h2>
+            <p><strong>Mantén la calma:</strong> Lo primero es mantener la serenidad para evaluar la situación de manera efectiva y tomar decisiones rápidas.</p>
+            <p><strong>Verifica la seguridad:</strong> Asegúrate de que el lugar sea seguro tanto para ti como para la persona afectada.</p>
+            <p><strong>Llama a emergencias:</strong> Contacta con el número de emergencias local (como el 911 en muchos países).</p>
+            <p><strong>Aplica primeros auxilios:</strong> Proporciona cuidados iniciales mientras esperas la llegada de los servicios de emergencia.</p>
+            
+            <h2>2. RCP y maniobras de resucitación</h2>
+            <p><strong>RCP en adultos:</strong> Si una persona está inconsciente y no respira, es fundamental iniciar maniobras de reanimación cardiopulmonar (RCP). Realiza compresiones torácicas profundas (al menos 5 cm) a una velocidad de 100-120 por minuto, seguidas de ventilaciones.</p>
+            <p><strong>Fuentes confiables:</strong> Cruz Roja, American Heart Association (AHA), European Resuscitation Council (ERC).</p>
+
+            <h2>3. Actuar ante un infarto o un ACV</h2>
+            <p><strong>Infarto:</strong> Dolor en el pecho, dificultad para respirar o sudoración excesiva podrían indicar un infarto. Llama a emergencias y administra aspirina si es seguro hacerlo.</p>
+            <p><strong>ACV:</strong> Síntomas como debilidad en un lado del cuerpo, dificultad para hablar o pérdida de visión requieren atención médica urgente.</p>
+
+            <h2>4. Primeros auxilios básicos</h2>
+            <p><strong>Control de hemorragias:</strong> Aplica presión directa sobre la herida con un paño limpio. Si la hemorragia es abundante, eleva la extremidad afectada mientras aplicas presión.</p>
+            <p><strong>Tratamiento de quemaduras:</strong> Para quemaduras menores, enjuaga con agua fría por al menos 10 minutos. Para quemaduras graves, cubre con un paño limpio y busca ayuda médica.</p>
+
+            <h2>5. Cómo manejar heridas y fracturas</h2>
+            <p><strong>Heridas:</strong> Lava con agua limpia y cúbrela con un apósito estéril. Para heridas grandes, utiliza un vendaje firme.</p>
+            <p><strong>Fracturas:</strong> Inmoviliza la parte afectada y evita intentar alinear el hueso. Busca atención médica.</p>
+
+            <h2>6. Cómo reaccionar ante intoxicaciones y crisis convulsivas</h2>
+            <p><strong>Intoxicaciones:</strong> No induzcas el vómito a menos que un profesional lo indique. Llama al centro de control de intoxicaciones.</p>
+            <p><strong>Crisis convulsivas:</strong> Asegura el entorno, coloca algo suave bajo la cabeza de la persona y evita intentar detener los movimientos.</p>
+        </div>
+        </div>
+
+        <!-- Referencias -->
+        <div class="references-section">
+            <h2>Referencias</h2>
+            <p>American Heart Association. (2020). <i>Qué hacer en una emergencia médica.</i> Recuperado de <a href="https://www.heart.org/es/temas-de-salud/primeros-auxilios/que-hacer-en-una-emergencia-medica" target="_blank">https://www.heart.org/es/temas-de-salud/primeros-auxilios/que-hacer-en-una-emergencia-medica</a></p>
+            <p>National Institutes of Health. (2019). <i>Emergencias médicas. MedlinePlus.</i> Recuperado de <a href="https://medlineplus.gov/spanish/medicalemergencies.html" target="_blank">https://medlineplus.gov/spanish/medicalemergencies.html</a></p>
+            <p>Cruz Roja Española. (s.f.). <i>Emergencias médicas: ¿Qué hacer?.</i> Recuperado de <a href="https://www.cruzroja.es/web/operaciones/emergencias-medicas" target="_blank">https://www.cruzroja.es/web/operaciones/emergencias-medicas</a></p>
+            <p>Organización Mundial de la Salud (OMS). (2020). <i>Emergencias sanitarias.</i> Recuperado de <a href="https://www.who.int/es/emergencies" target="_blank">https://www.who.int/es/emergencies</a></p>
+            <p>Mayo Clinic. (2021). <i>Primeros auxilios: Atención médica de emergencia.</i> Recuperado de <a href="https://www.mayoclinic.org/es-es/first-aid/first-aid-emergency-medical-care/itt-20456647" target="_blank">https://www.mayoclinic.org/es-es/first-aid/first-aid-emergency-medical-care/itt-20456647</a></p>
+            <p>MedlinePlus. (2021). <i>Emergencias médicas.</i> Recuperado de <a href="https://medlineplus.gov/spanish/medicalemergencies.html" target="_blank">https://medlineplus.gov/spanish/medicalemergencies.html</a></p>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <p><strong>Nombres:</strong> Álvarez Ochoa Valeria & Cota Tarazón Luz Ximena, Grupo 110</p>
+                <p>"Este sitio web se realiza para una práctica escolar de la materia NTIC, de la Universidad de Sonora"</p>
+            </div>
+        </footer>
+        <!-- Sección de formulario para sugerencias -->
+        <div class="suggestion-box">
+            <h2>Envíanos tus sugerencias</h2>
+            <p>Tu opinión es importante para nosotros. Por favor, llena el siguiente formulario para compartir tus ideas o comentarios:</p>
+            <iframe 
+                src="https://forms.gle/vRgDbMqh7UHN7SGe7" 
+                width="100%" 
+                height="600" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0"
+                style="border: 1px solid #ddd; border-radius: 8px;">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+

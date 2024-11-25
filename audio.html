@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Informativo</title>
+    <style>
+        /* Reset básico */
+        body, html {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            height: 100%;
+        }
+
+        /* Contenedor principal */
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Abarca toda la altura de la pantalla */
+            text-align: center;
+            padding: 0;
+            position: relative;
+        }
+
+        /* Título */
+        h1 {
+            font-size: 24px;
+            color: #fff;
+            position: absolute;
+            top: 20px; /* Ponerlo en la parte superior */
+            z-index: 2; /* Asegurarse que esté por encima de la imagen */
+        }
+
+        /* Contenedor del audio */
+        .audio-container {
+            width: 100%;
+            height: 100%; /* Abarca toda la altura */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Estilo de la imagen */
+        .audio-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Para cubrir toda la pantalla */
+            position: absolute; /* Hace que la imagen se posicione detrás del contenido */
+            top: 0;
+            left: 0;
+            z-index: 1; /* Hace que la imagen quede en el fondo */
+        }
+
+        audio {
+            width: 100%;
+            position: relative;
+            z-index: 2; /* Hace que el reproductor de audio quede encima de la imagen */
+            max-width: 600px; /* Limita el tamaño del reproductor */
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Audio Informativo</h1>
+        <div class="audio-container">
+            <!-- Imagen relacionada con el audio -->
+            <img src="iaudio.jpg" alt="Imagen relacionada al audio">
+            <!-- Reproductor de audio -->
+            <audio controls>
+                <source src="Audioinformativo.m4a" type="audio/mp4">
+                <source src="audio.ogg" type="audio/ogg">
+                Tu navegador no soporta el elemento de audio. Por favor, actualízalo.
+            </audio>
+        </div>
+    </div>
+</body>
+</html>
+
